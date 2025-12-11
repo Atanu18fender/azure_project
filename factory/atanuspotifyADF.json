@@ -1,0 +1,9 @@
+{
+	"name": "atanuspotifyADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0bdee348-491f-43d9-9347-693bab0da279",
+		"tenantId": "829c3d65-839f-4284-aa20-74684e50045b"
+	}
+}
