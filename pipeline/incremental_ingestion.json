@@ -113,10 +113,7 @@
 								"value": "@pipeline().parameters.cdc_folder",
 								"type": "Expression"
 							},
-							"file": {
-								"value": "@concat(pipeline().parameters.cdc_folder,'.json')",
-								"type": "Expression"
-							}
+							"file": "cdc.json"
 						}
 					},
 					"firstRowOnly": false
@@ -270,10 +267,7 @@
 											"value": "@pipeline().parameters.cdc_folder",
 											"type": "Expression"
 										},
-										"file": {
-											"value": "@concat(pipeline().parameters.cdc_folder,'.json')",
-											"type": "Expression"
-										}
+										"file": "cdc.json"
 									}
 								}
 							]
@@ -318,7 +312,7 @@
 			},
 			"table": {
 				"type": "string",
-				"defaultValue": "DimUser"
+				"defaultValue": "DimArtist"
 			},
 			"cdc_col": {
 				"type": "string",
@@ -326,7 +320,7 @@
 			},
 			"cdc_folder": {
 				"type": "string",
-				"defaultValue": "user_cdc"
+				"defaultValue": "DimArtist_cdc"
 			},
 			"back_date": {
 				"type": "string"
