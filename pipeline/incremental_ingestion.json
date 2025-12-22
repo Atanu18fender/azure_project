@@ -312,7 +312,7 @@
 			},
 			"table": {
 				"type": "string",
-				"defaultValue": "DimArtist"
+				"defaultValue": "DimTrack"
 			},
 			"cdc_col": {
 				"type": "string",
@@ -320,7 +320,7 @@
 			},
 			"cdc_folder": {
 				"type": "string",
-				"defaultValue": "DimArtist_cdc"
+				"defaultValue": "DimTrack_cdc"
 			},
 			"back_date": {
 				"type": "string"
