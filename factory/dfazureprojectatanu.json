@@ -1,0 +1,9 @@
+{
+	"name": "dfazureprojectatanu",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c0dfa3ed-11dd-4411-bc0d-a6705bda3225",
+		"tenantId": "1399844e-57c2-4bc3-8f05-f184f1eb1940"
+	}
+}
