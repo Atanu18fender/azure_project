@@ -2,7 +2,7 @@
 	"name": "parquet_dynamic",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "datalakeconnection",
+			"referenceName": "datalakestorageconnection",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
