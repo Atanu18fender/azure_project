@@ -42,7 +42,7 @@
 								"source": {
 									"type": "AzureSqlSource",
 									"sqlReaderQuery": {
-										"value": "select * from @{item().schema}.@{item().table} where @{item().cdc_col} >'@{if(empty(item().back_date),\n    activity('last_cdc').output.value[0].cdc,item().back_date)}'\n",
+										"value": "select * from @{item().schema}.@{item().table} where @{item().cdc_col} > '@{if(empty(item().from_date),activity('last_cdc').output.value[0].cdc,item().back_date)}'",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
@@ -69,7 +69,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "azure_sql_db",
+									"referenceName": "azuresqltable",
 									"type": "DatasetReference"
 								}
 							],
@@ -296,7 +296,7 @@
 										},
 										"userProperties": [],
 										"linkedServiceName": {
-											"referenceName": "azuresqlconnection",
+											"referenceName": "azuresqldbconnection",
 											"type": "LinkedServiceReference"
 										},
 										"typeProperties": {
